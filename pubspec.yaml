@@ -1,0 +1,29 @@
+name: neon_snake
+description: "Neon Snake: neon arcade snake with arenas, enemy snakes and bosses."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.5.6
+  audioplayers: ^6.8.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sfx/
+
+# Same Android release crash fix as Block Daily: newer versions crash at startup.
+dependency_overrides:
+  shared_preferences_android: 2.4.28
