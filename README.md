@@ -39,5 +39,5 @@ flutter test
 flutter run -d chrome
 ```
 
-Every push to `main` builds and deploys the web version to GitHub Pages
-(`.github/workflows/web.yml`).
+Every push to `main` builds and deploys the web version to the GoDaddy hosting
+(`.github/workflows/deploy-godaddy.yml`).
